@@ -18,10 +18,6 @@ const navItems = document.querySelectorAll('.nav-item');
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
-<<<<<<< HEAD
-
-
-
 // =====================================================
 // HERO CURSOR SPOTLIGHT
 // =====================================================
@@ -66,8 +62,7 @@ skillBars.forEach(bar => {
     bar.style.width = '';
 });
 
-=======
->>>>>>> 9ed63b4130d96018c8f9161c282953c07fcd10f0
+
 // =====================================================
 // PRELOADER
 // =====================================================
@@ -304,13 +299,12 @@ const observer = new IntersectionObserver(
 
                 entry.target.classList.add('visible');
 
-<<<<<<< HEAD
+
                 entry.target
                     .querySelectorAll('.skill-bar-fill')
                     .forEach(bar => bar.classList.add('filled'));
 
-=======
->>>>>>> 9ed63b4130d96018c8f9161c282953c07fcd10f0
+
                 if (
                     entry.target.tagName === 'SECTION'
                 ) {
@@ -428,35 +422,35 @@ if (contactForm) {
                 }
             )
 
-            .then(() => {
+                .then(() => {
 
-                alert(
-                    'Message sent successfully!'
-                );
+                    alert(
+                        'Message sent successfully!'
+                    );
 
-                contactForm.reset();
+                    contactForm.reset();
 
-                submitBtn.disabled = false;
+                    submitBtn.disabled = false;
 
-                submitBtn.innerHTML =
-                    'Send Message <i class="fa-solid fa-paper-plane"></i>';
+                    submitBtn.innerHTML =
+                        'Send Message <i class="fa-solid fa-paper-plane"></i>';
 
-            })
+                })
 
-            .catch((error) => {
+                .catch((error) => {
 
-                console.error(error);
+                    console.error(error);
 
-                alert(
-                    'Failed to send message. Please try again.'
-                );
+                    alert(
+                        'Failed to send message. Please try again.'
+                    );
 
-                submitBtn.disabled = false;
+                    submitBtn.disabled = false;
 
-                submitBtn.innerHTML =
-                    'Send Message <i class="fa-solid fa-paper-plane"></i>';
+                    submitBtn.innerHTML =
+                        'Send Message <i class="fa-solid fa-paper-plane"></i>';
 
-            });
+                });
 
         }
     );
