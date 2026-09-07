@@ -18,6 +18,7 @@ const navItems = document.querySelectorAll('.nav-item');
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card');
 
+<<<<<<< HEAD
 
 
 
@@ -65,6 +66,8 @@ skillBars.forEach(bar => {
     bar.style.width = '';
 });
 
+=======
+>>>>>>> 9ed63b4130d96018c8f9161c282953c07fcd10f0
 // =====================================================
 // PRELOADER
 // =====================================================
@@ -301,10 +304,13 @@ const observer = new IntersectionObserver(
 
                 entry.target.classList.add('visible');
 
+<<<<<<< HEAD
                 entry.target
                     .querySelectorAll('.skill-bar-fill')
                     .forEach(bar => bar.classList.add('filled'));
 
+=======
+>>>>>>> 9ed63b4130d96018c8f9161c282953c07fcd10f0
                 if (
                     entry.target.tagName === 'SECTION'
                 ) {
